@@ -1,3 +1,16 @@
 .page {
   overflow: hidden;
 }
+
+.body {
+  min-height: 100vh;
+}
+
+.footer {
+  height: 200px;
+  margin-top: -200px;
+}
+
+.indent {
+  height: 200px;
+}

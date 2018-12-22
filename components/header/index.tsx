@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Menu from './menu/index';
 import styles from './header.scss';
-import Logo from '../../static/logo.svg';
-import Twitter from '../../static/icons/twitter.svg';
-import Facebook from '../../static/icons/facebook.svg';
+import Logo from './logo.svg';
+import Twitter from './twitter.svg';
+import Facebook from './facebook.svg';
 
 export default class extends React.Component {
   render() {

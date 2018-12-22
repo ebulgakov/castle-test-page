@@ -1,5 +1,3 @@
-
-
 declare module '*.scss' {
   const content: { [className: string]: string };
   export = content;
@@ -10,3 +8,8 @@ declare module '*.svg' {
   export default value;
 }
 
+
+declare module '*.jpg' {
+  const content: string;
+  export default content;
+}

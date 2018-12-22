@@ -1,11 +1,10 @@
 import React from 'react';
 import Page from '../../components/page/index';
-import styles1 from './button.scss';
+import Team from './team/index'
 
 const Index = () => (
   <Page>
-
-    <p className={styles1.hero}>Hello Next.js</p>
+    <Team />
   </Page>
 );
 

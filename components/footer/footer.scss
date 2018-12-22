@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--grey);
+}
+
+.container {
+  composes: container from '../../styles/grid.scss';
+  display: flex;
+  max-width: 1000px;
+  height: 200px;
+  padding-top: 50px;
+}
+
+.contacts {
+  position: relative;
+  margin-right: auto;
+  padding-left: 70px;
+}
+
+.marker {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 22px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social {
+  margin-left: 40px;
+  color: var(--light-blue);
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.tel {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.email {
+  font-size: 18px;
+}
+
+.address {
+  margin-left: 80px;
+}
+
+.city {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
