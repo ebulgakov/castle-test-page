@@ -4,4 +4,6 @@ export interface IArticlePreview {
   link?: string;
   text?: string;
   image?: string;
+  number?: string;
+  invert?: boolean;
 }

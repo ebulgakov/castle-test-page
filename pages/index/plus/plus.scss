@@ -1,0 +1,25 @@
+.plus {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 2px solid;
+  border-radius: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    margin: auto;
+    content: '';
+    background-color: currentColor;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}

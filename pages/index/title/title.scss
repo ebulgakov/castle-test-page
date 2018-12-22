@@ -1,0 +1,38 @@
+.title {
+  composes: container from '../../../styles/grid.scss';
+}
+
+.body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 48%;
+  height: 80px;
+  margin: 0;
+  padding: 0 24px;
+  font: 300 36px/1 var(--font-family-title);
+  text-transform: uppercase;
+  background-color: var(--grey);
+}
+
+.meeting {
+  composes: body;
+  margin-left: 24%;
+  background-color: var(--yellow);
+}
+
+.events {
+  composes: body;
+  margin-left: 28%;
+  background-color: var(--aqua);
+}
+
+.projects {
+  composes: body;
+  margin-left: 24%;
+  background-color: var(--red);
+}
+
+.text {
+  margin-right: 20px;
+}

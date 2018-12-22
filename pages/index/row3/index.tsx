@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from './row.scss';
-import LargeSlide from '../cells/large/index';
-import MiddleSlide from '../cells/middle/index';
+import styles from '../row1/row.scss';
+import Article from '../cells/article/index';
+import Arrow from '../cells/arrow/index';
+import Middle from '../cells/middle/index';
+import Name from '../cells/name/index';
 import { IArticlePreview } from '../../../types/article';
 
 interface Props {
@@ -13,16 +15,16 @@ export default ({ slides }: Props) => (
       <div className={styles.wrapper}>
         <div className={styles.grid}>
           <div className={styles.item1}>
-            <LargeSlide {...slides[0]} />
+            <Article {...slides[0]} />
           </div>
           <div className={styles.item2}>
-            <MiddleSlide {...slides[1]} />
+            <Name {...slides[1]} />
           </div>
           <div className={styles.item3}>
-            <MiddleSlide {...slides[2]} />
+            <Middle {...slides[2]} />
           </div>
           <div className={styles.item4}>
-            <MiddleSlide {...slides[3]} />
+            <Arrow invert {...slides[3]} />
           </div>
         </div>
       </div>
