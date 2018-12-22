@@ -1,0 +1,47 @@
+$header-height: 80px;
+
+.static {
+  height: $header-height;
+}
+
+.runner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: var(--grey);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  height: $header-height;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.social {
+  display: block;
+  margin-left: 50px;
+}
+
+.language {
+  margin-left: 50px;
+  padding: 1px 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 11px;
+  text-transform: uppercase;
+  background: #000;
+
+  &:hover {
+    color: #fff;
+    background-color: var(--gold);
+  }
+}

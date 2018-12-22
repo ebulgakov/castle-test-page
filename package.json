@@ -1,0 +1,32 @@
+{
+  "name": "castle-test-page",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "next",
+    "stylelint": "stylelint --fix './**/*.scss'",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^7.0.2",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^4.1.0",
+    "@types/next": "^7.0.5",
+    "@types/react": "^16.7.18",
+    "autoprefixer": "^9.4.3",
+    "postcss-preset-env": "^6.5.0",
+    "stylelint": "^9.9.0",
+    "stylelint-config-rational-order": "^0.0.2",
+    "stylelint-config-sass-guidelines": "^5.3.0"
+  }
+}
