@@ -1,0 +1,32 @@
+.slide {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.title {
+  color: var(--dark-red);
+  font: 400 24px/1 var(--font-family-title);
+  text-transform: uppercase;
+}
+
+.text {
+  max-width: 200px;
+  margin: 0;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
