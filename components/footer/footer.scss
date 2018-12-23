@@ -1,9 +1,9 @@
 .footer {
-  background-color: var(--grey);
+  background-color: $grey;
 }
 
 .container {
-  composes: container from '../../styles/grid.scss';
+  @extend %container;
   display: flex;
   max-width: 1000px;
   height: 200px;
@@ -32,7 +32,7 @@
 
 .social {
   margin-left: 40px;
-  color: var(--light-blue);
+  color: $light-blue;
 
   &:first-child {
     margin-left: 0;

@@ -1,7 +1,5 @@
-@value medium, medium-down, small-down from '../../../styles/breakpoints.scss';
-
 .title {
-  composes: no-padding-container from '../../../styles/grid.scss';
+  @extend %no-padding-container;
 }
 
 .body {
@@ -12,15 +10,15 @@
   height: 80px;
   margin: 0;
   padding: 0 24px;
-  font: 300 36px/1 var(--font-family-title);
+  font: 300 36px/1 $font-family-title;
   text-transform: uppercase;
-  background-color: var(--grey);
+  background-color: $grey;
 
-  @media medium {
+  @include media-breakpoint-only(md) {
     width: 66.6%;
   }
 
-  @media small-down {
+  @include media-breakpoint-down(sm) {
     width: 100%;
   }
 }
@@ -28,31 +26,41 @@
 .meeting {
   composes: body;
   margin-left: 24%;
-  background-color: var(--yellow);
+  background-color: $yellow;
 
-  @media medium-down {
-    margin-left: 0;
+  @include media-breakpoint-only(lg) {
+    margin-left: 284px;
   }
 
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
 }
 
 .events {
   composes: body;
   margin-left: 28%;
-  background-color: var(--aqua);
+  background-color: $aqua;
 
-  @media medium-down {
-    margin-left: 0;
+  @include media-breakpoint-only(lg) {
+    margin-left: calc(100% - 284px * 2);
   }
 
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
 }
 
 .projects {
   composes: body;
   margin-left: 24%;
-  background-color: var(--red);
+  background-color: $red;
 
-  @media medium-down {
+  @include media-breakpoint-only(lg) {
+    margin-left: 284px;
+  }
+
+  @include media-breakpoint-down(md) {
     margin-left: 0;
   }
 }

@@ -1,0 +1,22 @@
+%container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+%no-padding-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+%article-grid-wrapper {
+  position: relative;
+  padding-top: 48%;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 570px;
+  }
+}

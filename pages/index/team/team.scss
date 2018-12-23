@@ -2,7 +2,7 @@
   position: relative;
   max-width: 960px;
   margin: 0 auto;
-  background-color: var(--aqua);
+  background-color: $aqua;
 }
 
 .wrapper {
@@ -18,7 +18,7 @@
 
 .title {
   margin: 0;
-  font: 400 24px/1 var(--font-family-title);
+  font: 400 24px/1 $font-family-title;
   letter-spacing: 1px;
   text-transform: uppercase;
 }

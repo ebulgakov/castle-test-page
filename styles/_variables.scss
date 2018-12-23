@@ -1,17 +1,26 @@
-:root {
-  --max-width: 1380px;
-  --gutter-width: 20px;
-  --font-family-title: 'Open Sans', sans-serif;
-  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-size-base: 14px;
-  --grey: #f8f8f8;
-  --text-color: #3b3b3b;
-  --blue: #1e1a33;
-  --gold: #b18632;
-  --aqua: #90ccd1;
-  --light-blue: #00abf0;
-  --dark-red: #483435;
-  --yellow: #fad35d;
-  --red: #f67e79;
-  --z-index-header: 100;
-}
+// Colors
+$grey: #f8f8f8;
+$text-color: #3b3b3b;
+$blue: #1e1a33;
+$gold: #b18632;
+$aqua: #90ccd1;
+$light-blue: #00abf0;
+$dark-red: #483435;
+$yellow: #fad35d;
+$red: #f67e79;
+$z-index-header: 100;
+
+// Typo
+$font-family-title: 'Open Sans', sans-serif;
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+
+// Responsive
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1380px,
+);

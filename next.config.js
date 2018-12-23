@@ -25,6 +25,16 @@ module.exports = (phase, { defaultConfig }) => {
         test: /\.svg/,
         use: ['@svgr/webpack'],
       });
+      config.module.rules.push({
+        test: /\.(sass|scss)/,
+        use: [{
+          loader: 'sass-resources-loader',
+          options: {
+            // Provide path to the file with resources
+            resources: ['./styles/_variables.scss', './styles/_breakpoints.scss', './styles/_presets.scss'],
+          },
+        }],
+      });
 
       return config;
     },

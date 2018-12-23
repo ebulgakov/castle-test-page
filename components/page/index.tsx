@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import '../../styles/global.scss';
+import '../../styles/scaffolding.scss';
+
 import styles from './styles.scss';
 
 import Header from '../header/index';
@@ -15,6 +16,7 @@ const page = ({ children }: Props) => (
     <Head>
       <title>Castle test page</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
     </Head>
     <div className={styles.body}>
       <Header />
