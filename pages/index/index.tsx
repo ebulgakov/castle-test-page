@@ -10,7 +10,7 @@ const slides = [
   {
     id: 0,
     link: '/about',
-    image: require('../../static/landing/image1.png'),
+    image: '/static/landing/image1.png',
     title: 'Awesome design. Great code. Crazy team.',
     text:
       "We have the experience, team and process to bring ideas from concept to launch and beyond. Since our founding in 2009, we've launched over 25 new products.",
@@ -23,21 +23,21 @@ const slides = [
   },
   {
     id: 2,
-    image: require('../../static/landing/image2.jpg'),
+    image: '/static/landing/image2.jpg',
     link: '/about',
     title: 'Design',
     text: 'Check out the timeline and be happy, dude.',
   },
   {
     id: 3,
-    image: require('../../static/landing/image3.jpg'),
+    image: '/static/landing/image3.jpg',
     link: '/about',
     title: 'Work',
     text: 'Check out the timeline and be happy, dude.',
   },
   {
     id: 4,
-    image: require('../../static/landing/image4.png'),
+    image: '/static/landing/image4.png',
     link: '/about',
   },
   {
@@ -48,12 +48,12 @@ const slides = [
   },
   {
     id: 6,
-    image: require('../../static/landing/image5.jpg'),
+    image: '/static/landing/image5.jpg',
     link: '/about',
   },
   {
     id: 7,
-    image: require('../../static/landing/image6.jpg'),
+    image: '/static/landing/image6.jpg',
     link: '/about',
     number: '#11',
     title: 'Daria Biryukova',
@@ -61,7 +61,7 @@ const slides = [
   },
   {
     id: 8,
-    image: require('../../static/landing/image7.jpg'),
+    image: '/static/landing/image7.jpg',
     link: '/about',
     invert: true,
     title: 'JetBrains two-days festival',
@@ -75,17 +75,17 @@ const slides = [
   },
   {
     id: 10,
-    image: require('../../static/landing/image8.jpg'),
+    image: '/static/landing/image8.jpg',
     link: '/about',
   },
   {
     id: 11,
-    image: require('../../static/landing/image10.png'),
+    image: '/static/landing/image10.png',
     link: '/about',
   },
   {
     id: 12,
-    image: require('../../static/landing/image11.png'),
+    image: '/static/landing/image11.png',
     link: '/about',
   },
   {
@@ -96,12 +96,12 @@ const slides = [
   },
   {
     id: 14,
-    image: require('../../static/landing/image12.jpg'),
+    image: '/static/landing/image12.jpg',
     link: '/about',
   },
   {
     id: 15,
-    image: require('../../static/landing/image13.jpg'),
+    image: '/static/landing/image13.jpg',
     link: '/about',
     title: 'House Account',
     text: 'Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away...',
