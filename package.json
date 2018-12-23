@@ -1,6 +1,9 @@
 {
   "name": "castle-test-page",
   "version": "0.0.1",
+  "engines": {
+    "node": "10.x.x"
+  },
   "description": "",
   "scripts": {
     "dev": "next",
