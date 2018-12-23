@@ -4,7 +4,7 @@ import Plus from '../plus/index';
 
 interface Props {
   title: string;
-  modification?: string;
+  modification?: 'projects' | 'events' | 'meeting';
 }
 
 function getClassName(name?: string): string {
@@ -20,10 +20,12 @@ function getClassName(name?: string): string {
   }
 }
 
-export default ({ title, modification }: Props) => (
+const title = ({ title, modification }: Props) => (
   <section className={styles.title}>
     <h2 className={getClassName(modification)}>
       <div className={styles.text}>{title}</div> <Plus />
     </h2>
   </section>
 );
+
+export default title;

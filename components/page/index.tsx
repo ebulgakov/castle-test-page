@@ -10,7 +10,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default ({ children }: Props) => (
+const page = ({ children }: Props) => (
   <div className={styles.page}>
     <Head>
       <title>Castle test page</title>
@@ -26,3 +26,5 @@ export default ({ children }: Props) => (
     </div>
   </div>
 );
+
+export default page;
