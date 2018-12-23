@@ -1,5 +1,7 @@
+@value medium, medium-down, small-down from '../../../styles/breakpoints.scss';
+
 .title {
-  composes: container from '../../../styles/grid.scss';
+  composes: no-padding-container from '../../../styles/grid.scss';
 }
 
 .body {
@@ -13,24 +15,46 @@
   font: 300 36px/1 var(--font-family-title);
   text-transform: uppercase;
   background-color: var(--grey);
+
+  @media medium {
+    width: 66.6%;
+  }
+
+  @media small-down {
+    width: 100%;
+  }
 }
 
 .meeting {
   composes: body;
   margin-left: 24%;
   background-color: var(--yellow);
+
+  @media medium-down {
+    margin-left: 0;
+  }
+
 }
 
 .events {
   composes: body;
   margin-left: 28%;
   background-color: var(--aqua);
+
+  @media medium-down {
+    margin-left: 0;
+  }
+
 }
 
 .projects {
   composes: body;
   margin-left: 24%;
   background-color: var(--red);
+
+  @media medium-down {
+    margin-left: 0;
+  }
 }
 
 .text {

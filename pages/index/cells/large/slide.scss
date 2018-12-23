@@ -1,4 +1,4 @@
-@value large from '../../../../styles/breakpoints.scss';
+@value xx-large from '../../../../styles/breakpoints.scss';
 
 .slide {
   display: flex;
@@ -17,7 +17,7 @@
   font: 400 3vw/1.2 var(--font-family-title);
   letter-spacing: -1px;
 
-  @media large {
+  @media xx-large {
     font-size: 40px;
   }
 }

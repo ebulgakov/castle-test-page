@@ -4,3 +4,11 @@
   padding-right: var(--gutter-width);
   padding-left: var(--gutter-width);
 }
+
+.no-padding-container {
+  composes: container;
+  max-width: calc(var(--max-width) - var(--gutter-width) * 2);
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
