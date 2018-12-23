@@ -15,21 +15,6 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
 
-    config.module.rules.push({
-      test: /\.(jpe?g|png|gif)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            context: '',
-            emitFile: true,
-            name: '[path][name].[ext]',
-            publicPath: '/',
-          },
-        },
-      ],
-    });
-
     return config;
   },
 };
