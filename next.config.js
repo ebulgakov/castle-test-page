@@ -17,7 +17,7 @@ module.exports = (phase, { defaultConfig }) => {
   const nextConfig = {
     cssModules: true,
     cssLoaderOptions: {
-      importLoaders: 1,
+      importLoaders: 3,
       localIdentName: '[name]-[local]___[hash:base64:5]',
     },
     webpack(config) {

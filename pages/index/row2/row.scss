@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-  @extend %article-grid-wrapper;
+  composes: wrapper from '../row1/row.scss';
 }
 
 .grid {

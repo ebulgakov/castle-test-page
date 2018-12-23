@@ -7,7 +7,12 @@
 }
 
 .wrapper {
-  @extend %article-grid-wrapper;
+  position: relative;
+  padding-top: 48%;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 570px;
+  }
 }
 
 .grid {
