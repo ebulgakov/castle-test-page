@@ -6,7 +6,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 48%;
+  width: 100%;
   height: 80px;
   margin: 0;
   padding: 0 24px;
@@ -14,54 +14,51 @@
   text-transform: uppercase;
   background-color: $grey;
 
-  @include media-breakpoint-only(md) {
-    width: 66.6%;
+  @include media-breakpoint-up(lg) {
+    width: 48%;
   }
 
-  @include media-breakpoint-down(sm) {
-    width: 100%;
+  @include media-breakpoint-only(md) {
+    width: 66.6%;
   }
 }
 
 .meeting {
   composes: body;
-  margin-left: 24%;
   background-color: $yellow;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 24%;
+  }
 
   @include media-breakpoint-only(lg) {
     margin-left: 284px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-left: 0;
   }
 }
 
 .events {
   composes: body;
-  margin-left: 28%;
   background-color: $aqua;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 28%;
+  }
 
   @include media-breakpoint-only(lg) {
     margin-left: calc(100% - 284px * 2);
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-left: 0;
   }
 }
 
 .projects {
   composes: body;
-  margin-left: 24%;
   background-color: $red;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 24%;
+  }
 
   @include media-breakpoint-only(lg) {
     margin-left: 284px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-left: 0;
   }
 }
 
