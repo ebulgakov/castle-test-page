@@ -1,7 +1,5 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import '../../styles/scaffolding.scss';
-
 import styles from './styles.scss';
 
 import Header from '../header/index';

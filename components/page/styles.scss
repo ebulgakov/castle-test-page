@@ -1,3 +1,40 @@
+@import '~normalize.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  transition: all 150ms ease;
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+svg {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .page {
   overflow: hidden;
 }
