@@ -13,7 +13,8 @@ const slides = [
     image: '/static/landing/image1.png',
     title: 'Awesome design. Great code. Crazy team.',
     text:
-      "We have the experience, team and process to bring ideas from concept to launch and beyond. Since our founding in 2009, we've launched over 25 new products.",
+      'We have the experience, team and process to bring ideas from concept to launch and beyond. ' +
+      "Since our founding in 2009, we've launched over 25 new products.",
   },
   {
     id: 1,
@@ -108,7 +109,7 @@ const slides = [
   },
 ];
 
-const Index = () => (
+export default () => (
   <Page>
     <Team />
     <Row1 slides={[slides[0], slides[1], slides[2], slides[3]]} />
@@ -120,5 +121,3 @@ const Index = () => (
     <Row2 slides={[slides[12], slides[13], slides[14], slides[15]]} />
   </Page>
 );
-
-export default Index;

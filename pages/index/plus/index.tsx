@@ -1,4 +1,4 @@
 import React from 'react';
 import styles from './plus.scss';
 
-export default () => <div role="image" className={styles.plus} />;
+export default () => <div role="img" className={styles.plus} />;

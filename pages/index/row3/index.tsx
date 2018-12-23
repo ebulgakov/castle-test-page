@@ -24,7 +24,7 @@ export default ({ slides }: Props) => (
             <Middle {...slides[2]} />
           </div>
           <div className={styles.item4}>
-            <Arrow invert {...slides[3]} />
+            <Arrow {...slides[3]} />
           </div>
         </div>
       </div>

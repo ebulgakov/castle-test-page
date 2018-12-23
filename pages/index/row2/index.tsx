@@ -4,7 +4,7 @@ import MiddleSlide from '../cells/middle/index';
 import Arrow from '../cells/arrow/index';
 import Name from '../cells/name/index';
 import Article from '../cells/article/index';
-import {IArticlePreview} from "../../../types/article";
+import { IArticlePreview } from '../../../types/article';
 
 interface Props {
   slides: IArticlePreview[];
@@ -31,4 +31,3 @@ export default ({ slides }: Props) => (
     </div>
   </section>
 );
-

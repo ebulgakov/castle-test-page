@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import Head from 'next/head';
 import '../../styles/global.scss';
 import styles from './styles.scss';
 
@@ -9,8 +10,12 @@ interface Props {
   children: ReactNode;
 }
 
-const Index = ({ children }: Props) => (
+export default ({ children }: Props) => (
   <div className={styles.page}>
+    <Head>
+      <title>Castle test page</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <div className={styles.body}>
       <Header />
       {children}
@@ -21,5 +26,3 @@ const Index = ({ children }: Props) => (
     </div>
   </div>
 );
-
-export default Index;
